@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips Diarios - Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --beige-claro: #f8f4f0;
+      --beige-oscuro: #e0dcd6;
+      --gris-suave: #b8b8b8;
+      --negro-suave: #444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--beige-claro);
+      color: var(--negro-suave);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: var(--beige-oscuro);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--negro-suave);
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    .intro {
+      max-width: 800px;
+      text-align: center;
+      margin: 2rem;
+      padding: 0 1rem;
+    }
+
+    .intro h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      padding: 1rem;
+    }
+
+    .post {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    article {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    article .content {
+      padding: 1rem;
+    }
+
+    article h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    article p {
+      font-size: 0.95rem;
+      color: var(--negro-suave);
+      text-align: center;
+    }
+
+    aside {
+      width: 100%;
+      max-width: 300px;
+      background-color: var(--beige-oscuro);
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+    }
+
+    aside h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    aside ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    aside li {
+      margin: 0.5rem 0;
+    }
+
+    .contacto {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+      margin: 2rem auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contacto h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      padding: 0.8rem;
+      border: 1px solid var(--gris-suave);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contacto button {
+      background-color: var(--beige-oscuro);
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contacto button:hover {
+      background-color: var(--gris-suave);
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Imagenes/pngwing.com 2.png" alt="Logo Blog">
+    <nav>
+      <a href="https://linktr.ee/" target="_blank">Linktree</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Bienvenida a Tips Diarios</h1>
+    <p>Un blog para descubrir cada día consejos únicos sobre comida, fitness, moda y tendencias. Inspirate, aprendé y animate a cambiar tu rutina con pequeños grandes tips.</p>
+  </section>
+
+  <main>
+    <a href="alimentacion.html" class="post">
+      <article>
+        <img src="Imagenes/_.jpeg" alt="Comida saludable">
+        <div class="content">
+          <h2>Come Mejor: Habitos saludables que cambian tu dia</h2>
+          <p>Pequeños cambios, grandes resultados. Descubrí cómo alimentarte mejor sin dejar de disfrutar</p>
+        </div>
+      </article>
+    </a>
+    <a href="fitness.html" class="post">
+      <article>
+        <img src="Imagenes/Gym.jpeg" alt="Ejercicio">
+        <div class="content">
+          <h2>Tu primer dia en el Gym: Guia para no abandonar a la semana</h2>
+          <p>Todo lo que necesitas saber para empezar con confianza, sin miedo y sin lesiones</p>
+        </div>
+      </article>
+    </a>
+    <a href="tendencias.html" class="post">
+      <article>
+        <img src="Imagenes/_ (1).jpeg" alt="Moda">
+        <div class="content">
+          <h2>Otoño-Invierno 2025: Tendencias que vas a querer usar ya</h2>
+          <p>Colores, prendas clave y lo que se viene fuerte esta temporada. Inspirate y renova tu look.</p>
+        </div>
+      </article>
+    </a>
+    <a href="rock.html" class="post">
+      <article>
+        <img src="Imagenes/rock.jpeg" alt="Rock Nacional">
+        <div class="content">
+          <h2>¿Te acordas de estos temazos?</h2>
+          <p>Una seleccion potente de artistas que dejaron huella en el rock nacional</p>
+        </div>
+      </article>
+    </a>
+    <a href="moda.html" class="post">
+      <article>
+        <img src="Imagenes/_ (2).jpeg" alt="Maquillaje">
+        <div class="content">
+          <h2>Tips de maquillaje: Vas a sorprender a todos con los resultados</h2>
+          <p>Lográ un look impecable con los mejores productos de las marcas que te mostramos</p>
+        </div>
+      </article>
+    </a>
+  </main>
+
+  <aside>
+    <h3>Categorías</h3>
+    <ul>
+      <li>Comida</li>
+      <li>Fitness</li>
+      <li>Moda</li>
+      <li>Tendencias</li>
+    </ul>
+  </aside>
+
+  <section class="contacto">
+    <h3>Contacto</h3>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu email" required>
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Tips Diarios - Delfina San Martin - Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
